@@ -92,7 +92,7 @@ const intToRoman2 = [
   [1, "I"],
 ]
 
-export function RomanNums1(initValueStringArr, inputNumber)
+export function RomanNums1(initValueString, inputNumber)
 {
   if(!Number.isInteger(inputNumber))
   {
@@ -103,10 +103,10 @@ export function RomanNums1(initValueStringArr, inputNumber)
     if(inputNumber-intToRoman2[i][0] >= 0)
     {
       inputNumber -= intToRoman2[i][0];
-      initValueStringArr.push(intToRoman2[i][1]);
+      initValueString += intToRoman2[i][1];
       if(inputNumber == 0)
       {
-        return initValueStringArr.join("");
+        return initValueString;
       }
       else{
         
