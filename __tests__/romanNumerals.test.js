@@ -5,19 +5,19 @@ import {  ConvertToRomanNumeral } from "../src/romanNumerals";
 
 describe("RomanNums1 method", () => {
   test("It should throw an error if the argument is not a number", () => {
-    expect(() => { RomanNums1([], "h"); }).toThrow(TypeError)
+    expect(() => { RomanNums1("", "h"); }).toThrow(TypeError)
   });
 
   test("It should return XII for 12", () => {
-    expect(RomanNums1([],12)).toEqual("XII");
+    expect(RomanNums1("",12)).toEqual("XII");
   });
 
   test("It should return MMMCMXLVI for 3946", () => {
-    expect(RomanNums1([], 3946)).toEqual("MMMCMXLVI");
+    expect(RomanNums1("", 3946)).toEqual("MMMCMXLVI");
   });
 
   test("It should return IV for 4", () => {
-    expect(RomanNums1([],4)).toEqual("IV");
+    expect(RomanNums1("",4)).toEqual("IV");
   });
 });
 

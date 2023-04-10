@@ -110,7 +110,7 @@ export function RomanNums1(initValueString, inputNumber)
       }
       else{
         
-        return initValueStringArr.join("") + RomanNums1([], inputNumber);
+        return initValueString + RomanNums1("", inputNumber);
       }
     }
   }
